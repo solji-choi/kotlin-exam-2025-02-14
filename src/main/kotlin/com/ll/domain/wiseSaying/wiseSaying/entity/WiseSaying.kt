@@ -1,4 +1,4 @@
-package com.ll
+package com.ll.domain.wiseSaying.wiseSaying.entity
 
 class WiseSaying(
     val id: Int,

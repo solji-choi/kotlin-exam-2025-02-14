@@ -5,7 +5,7 @@ class WiseSaying(
     var content: String,
     var author: String
 ) {
-    fun update(content: String, author: String) {
+    fun modify(content: String, author: String) {
         this.content = content
         this.author = author
     }

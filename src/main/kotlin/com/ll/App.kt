@@ -48,7 +48,13 @@ class App {
                     continue
                 }
 
-                 wiseSayings.removeIf {it.id == id}
+                val wiseSaying = wiseSayings.firstOrNull { it.id == id }
+
+                if (wiseSaying == null) {
+                    println("${id}번 명언은 존재하지 않습니다.")
+                }
+
+                wiseSayings.remove(wiseSaying)
 
                 println("${id}번 명언을 삭제하였습니다.")
             }

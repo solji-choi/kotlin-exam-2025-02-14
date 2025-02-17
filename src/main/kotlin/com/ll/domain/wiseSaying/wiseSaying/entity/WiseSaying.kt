@@ -14,4 +14,15 @@ class WiseSaying(
     fun isNew(): Boolean {
         return id == 0
     }
+
+    val json: String
+        get() {
+            return """
+                {
+                    "id": $id,
+                    "content": "$content",
+                    "author": "$author"
+                }
+            """.trimIndent()
+        }
 }
